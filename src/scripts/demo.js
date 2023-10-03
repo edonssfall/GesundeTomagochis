@@ -11,7 +11,7 @@ const scoreValue = document.getElementById('scoreValue'),
 
 let buttonsText = [],
     score = 0,
-    imgPath = './src/img/'
+    imgPath = './src/img/';
 
 document.getElementById('minus10Button').addEventListener(
     'click', () => {

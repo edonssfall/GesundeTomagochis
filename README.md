@@ -122,13 +122,15 @@ abzuschliessen.
 
 ## Abschluss und Genehmigung
 
-| Freigebende Person | Produkt       | Datum      | Freigabe |
-|--------------------|---------------|------------|---------|
-| Eli                | Produkt Ideen | 25.09.2023 | []      |
-| Eli                | Mockups       | 26.09.2023 | []     |
-| Julian             | Personas      | 27.09.2023 | []     |
-| Julian             | Marktanalyse  | 27.09.2023 | []     |
-| Eli                | Documentation | 28.09.2023 | []      |
+| Freigebende Person | Produkt         | Datum | Freigabe |
+|--------------------|-----------------|-------|----------|
+| Eli                | Produkt Ideen   |       | []       |
+| Eli                | Mockups         |       | []       |
+| Julian             | Personas        |       | []       |
+| Julian             | Marktanalyse    |       | []       |
+| Eli                | Documentation   |       | []       |
+| Julian             | Responsive Test |       | []       |
+
 
 Dieses Projekt wird nach Abschluss einer umfassenden Überprüfung und Tests abgeschlossen. Die abschliessende Genehmigung
 erfolgt nach einer erfolgreichen Bewertung durch das Entwicklungsteam und die Einhaltung der Projektziele. Nach
