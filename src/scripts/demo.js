@@ -50,13 +50,13 @@ function createImage() {
         if (urlImage === 'rauchen') {
             scoreImage.src = imgPath + 'rauchen/image0.jpg';
             scoreImage.classList.add('rauchen_img')
-            mainImage.src = imgPath + 'smartWatch.jpg';
+            mainImage.src = imgPath + 'smartWatch_upscaled.jpg';
             mainImage.style.width = "45%"
             buttonsText = ['Laufen(+10)', 'Spazieren(+5)', 'Rauchen(-10)'];
         } else if (urlImage === 'spielen') {
             scoreImage.src = imgPath + 'spielen/image0.jpg';
             scoreImage.classList.add('spielen_img')
-            mainImage.src = imgPath + 'bildschirm.jpg'
+            mainImage.src = imgPath + 'bildschirm_upscaled.jpg'
             mainImage.style.width = "89%"
             buttonsText = ['Lernen(+10)', 'Anschauen(+5)', 'Spielen(-10)']
         } else {
