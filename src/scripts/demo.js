@@ -10,7 +10,8 @@ const scoreValue = document.getElementById('scoreValue'),
     startImage = '';
 
 let buttonsText = [],
-    score = 0;
+    score = 0,
+    imgPath = './src/img/'
 
 document.getElementById('minus10Button').addEventListener(
     'click', () => {
@@ -47,15 +48,15 @@ function updateScore() {
 function createImage() {
     if (urlImage) {
         if (urlImage === 'rauchen') {
-            scoreImage.src = '/src/img/rauchen/image0.jpg';
+            scoreImage.src = imgPath + 'rauchen/image0.jpg';
             scoreImage.classList.add('rauchen_img')
-            mainImage.src = '/src/img/smartWatch.jpg';
+            mainImage.src = imgPath + 'smartWatch.jpg';
             mainImage.style.width = "50%"
             buttonsText = ['Laufen(+10)', 'Spazieren(+5)', 'Rauchen(-10)'];
         } else if (urlImage === 'spielen') {
-            scoreImage.src = '/src/img/spielen/image0.jpg';
+            scoreImage.src = imgPath + 'spielen/image0.jpg';
             scoreImage.classList.add('spielen_img')
-            mainImage.src = '/src/img/bildschirm.jpg'
+            mainImage.src = imgPath + 'bildschirm.jpg'
             mainImage.style.width = "89%"
             buttonsText = ['Lernen(+10)', 'Anschauen(+5)', 'Spielen(-10)']
         } else {
@@ -78,9 +79,9 @@ function createImage() {
 
 function checkImage() {
     if (urlImage === 'rauchen') {
-        scoreImage.src = '/src/img/rauchen/'
+        scoreImage.src = imgPath + 'rauchen/'
     } else {
-        scoreImage.src = '/src/img/spielen/'
+        scoreImage.src = imgPath + 'spielen/'
     }
     if (score > -10 && score < 10) {
         scoreImage.src += 'image0.jpg'
