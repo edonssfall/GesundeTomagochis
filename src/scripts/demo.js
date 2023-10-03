@@ -1,4 +1,4 @@
-$("#footer").load("/footer.html");
+$("#footer").load("footer.html");
 
 const scoreValue = document.getElementById('scoreValue'),
     scoreImage = document.getElementById('scoreImage'),
