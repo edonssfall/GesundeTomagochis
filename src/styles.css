@@ -231,3 +231,7 @@ img[alt='iphoneDesktop'] {
 .social-icons img {
     width: 5vh;
 }
+
+.section {
+    background-color: black;
+}
