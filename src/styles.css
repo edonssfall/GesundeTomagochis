@@ -12,7 +12,7 @@ img {
 }
 
 img[alt='Logo'] {
-    height: 65px;
+    height: 45px;
 }
 
 .site {
@@ -57,7 +57,7 @@ img[alt='iphoneDesktop'] {
 }
 
 #section-4 img {
-    max-width: 100%;
+    max-width: 40%;
 }
 
 .wrapper {
@@ -112,10 +112,6 @@ img[alt='iphoneDesktop'] {
         display: none;
     }
 
-    #section-4 img {
-        max-width: 60%;
-    }
-
     .inner-image img {
         height: 18%;
         position: absolute;
@@ -160,15 +156,14 @@ img[alt='iphoneDesktop'] {
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
-        color: white !important;
+    }
+
+    #section-3 h2 {
+        color: white;
     }
 
     #section-3 .description {
         display: none;
-    }
-
-    #section-4 img {
-        max-width: 50%;
     }
 
     .demo_main_img {

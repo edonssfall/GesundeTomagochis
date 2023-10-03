@@ -23,21 +23,36 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="contactsModalLabel">Kontakts</h1>
-                <button type="button" class="btn-close" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">Address:</div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between">
+                    <span>Address:</span>
+                    <span class="text-center flex-grow-1">Bernapark 26, 3066 Stettlen</span>
+                </div>
+            </div>
             <hr>
-            <div class="modal-body">Nummer:</div>
-            <div class="modal-body">Email:</div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between">
+                    <span>Nummer:</span>
+                    <span class="text-center flex-grow-1">+41 123 456 789</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between">
+                    <span>Email:</span>
+                    <span class="text-center flex-grow-1">gesunde.tomagochis@super-app.com</span>
+                </div>
+            </div>
             <hr>
             <div class="modal-body flex text-center">
                 <div class="d-flex flex-column justify-content-center social-icons">
                     <p class="mb-3">Social Media</p>
                     <div class="d-flex justify-content-evenly">
-                        <img src="./src/img/icons/telegramm.png" alt="telegramIcon">
-                        <img src="./src/img/icons/facebook.png" alt="facebookIcon">
-                        <img src="./src/img/icons/instagram.png" alt="instagramIcon">
-                        <img src="./src/img/icons/tiktok.png" alt="tiktokIcon">
+                        <img href="https://web.telegram.org/" src="./src/img/icons/telegramm.png" alt="telegramIcon">
+                        <img href="https://de-de.facebook.com/" src="./src/img/icons/facebook.png" alt="facebookIcon">
+                        <img href="https://www.instagram.com/" src="./src/img/icons/instagram.png" alt="instagramIcon">
+                        <img href="https://www.tiktok.com/de-DE/" src="./src/img/icons/tiktok.png" alt="tiktokIcon">
                     </div>
                 </div>
             </div>
@@ -49,27 +64,27 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="supportModalLabel">Support</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="supportModalLabel">Unterstützung</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form id="supportForm">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="name fugen">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="email fugen">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail eingeben">
                     </div>
                     <div class="mb-3">
                         <label for="question" class="form-label">Frage</label>
-                        <textarea class="form-control" id="question" rows="4" placeholder="Frage?"></textarea>
+                        <textarea class="form-control" id="question" name="question" rows="4" placeholder="Ihre Frage hier eingeben"></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-dark">Schicken</button>
+                <button type="button" class="btn btn-dark" id="sendButton">Senden</button>
             </div>
         </div>
     </div>
