@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "IrishGroover";
+    src: url("/src/fonts/IrishGrover.ttf");
+}
+
+*{
+    font-family: JejuMyeongjo, sans-serif;
+}
+
+img {
+    height: auto;
+}
+
+img[alt='Logo'] {
+    height: 65px;
+}
+
+.site {
+    position: relative;
+}
+
+.section {
+    display: flex!important;
+    flex-direction: column!important;
+    height: 100vh!important;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    font-family: IrishGroover, sans-serif;
+}
+
+img[alt='macDesktop'] {
+    width: 90%;
+}
+
+img[alt='stickmanHallo'] {
+    position: absolute;
+    max-width: 13%;
+    top: 3%;
+    left: 8%;
+}
+
+img[alt='iphoneDesktop'] {
+    display: none;
+}
+
+#section-4 .titel {
+    padding-top: 5vh;
+    padding-left: 5vh;
+}
+
+#section-4 img {
+    max-width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.buttons-block {
+    margin-bottom: 10%;
+}
+
+.buttons-block button {
+    width: 170px;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+#footer a {
+    color: white;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+.modal {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    #section-1 img {
+        max-width: 65%;
+    }
+
+    #section-1 .list-sachen-mobil {
+        display: none;
+    }
+
+    #section-3 {
+        background-image: url('/src/img/mobileProductions.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #section-3 .description-small {
+        display: none;
+    }
+
+    #section-4 img {
+        max-width: 60%;
+    }
+
+    .inner-image img {
+        height: 18%;
+        position: absolute;
+    }
+
+    .spielen_img {
+        width: 20%;
+        left: 10%;
+        top: 43%;
+    }
+
+    .rauchen_img {
+        width: 15%;
+        left: 30%;
+        top: 55%;
+    }
+}
+
+@media (max-width: 767px) {
+    #section-0 p {
+        font-size: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #section-0 img {
+        max-width: 63%;
+    }
+
+    #section-1 .list-sachen {
+        display: none;
+    }
+
+    #section-1 img {
+        max-width: 90%;
+    }
+
+    #section-3 {
+        background-image: url('/src/img/handys.jpg');
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: white !important;
+    }
+
+    #section-3 .description {
+        display: none;
+    }
+
+    #section-4 img {
+        max-width: 50%;
+    }
+
+    .demo_main_img {
+        display: none;
+    }
+
+    .inner-image img {
+        margin: 15px;
+        height: 25vh;
+    }
+
+    footer a {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 766px) {
+    #section-1 .list-sachen {
+        display: unset;
+    }
+
+    #section-1 .list-sachen-mobil {
+        display: none;
+    }
+
+    #section-1 img {
+        max-width: 53%;
+    }
+
+    img[alt='iphoneDesktop'] {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    #section-1 .list-sachen {
+        display: unset;
+    }
+
+    #section-1 .list-sachen-mobil {
+        display: none;
+    }
+
+    #section-1 img {
+        max-width: 55%;
+    }
+
+    img[alt='macDesktop'] {
+        display: none;
+    }
+
+    img[alt='iphoneDesktop'] {
+        display: unset;
+        max-width: 95%;
+    }
+
+    img[alt='stickmanHallo'] {
+        max-width: 25%;
+        top: 55%;
+        left: 15%;
+        position: absolute;
+    }
+}
+
+.social-icons img {
+    width: 5vh;
+}

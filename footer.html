@@ -1,0 +1,77 @@
+<footer class="container-fluid">
+    <div class="col-12">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <p>©Leonid Tsarov (TIE International AG) 2023</p>
+            </div>
+            <div class="nav justify-content-end d-flex flex-row">
+                <a href="index.html">Home</a>
+                <a href="demo.html?demo=rauchen">Rauchen</a>
+                <a href="demo.html?demo=spielen">Spielen</a>
+                <a id="openContactsModal">Kontakts</a>
+                <a id="openSupportModal">Support</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/src/scripts/footer.js"></script>
+
+<div class="modal fade" id="contactsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="contactsModalLabel">Kontakts</h1>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Address:</div>
+            <hr>
+            <div class="modal-body">Nummer:</div>
+            <div class="modal-body">Email:</div>
+            <hr>
+            <div class="modal-body flex text-center">
+                <div class="d-flex flex-column justify-content-center social-icons">
+                    <p class="mb-3">Social Media</p>
+                    <div class="d-flex justify-content-evenly">
+                        <img src="/src/img/icons/telegramm.png" alt="telegramIcon">
+                        <img src="/src/img/icons/facebook.png" alt="facebookIcon">
+                        <img src="/src/img/icons/instagram.png" alt="instagramIcon">
+                        <img src="/src/img/icons/tiktok.png" alt="tiktokIcon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="supportModalLabel">Support</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="name fugen">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="email fugen">
+                    </div>
+                    <div class="mb-3">
+                        <label for="question" class="form-label">Frage</label>
+                        <textarea class="form-control" id="question" rows="4" placeholder="Frage?"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark">Schicken</button>
+            </div>
+        </div>
+    </div>
+</div>
+
