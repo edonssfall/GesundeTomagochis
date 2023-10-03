@@ -51,7 +51,7 @@ function createImage() {
             scoreImage.src = imgPath + 'rauchen/image0.jpg';
             scoreImage.classList.add('rauchen_img')
             mainImage.src = imgPath + 'smartWatch.jpg';
-            mainImage.style.width = "50%"
+            mainImage.style.width = "45%"
             buttonsText = ['Laufen(+10)', 'Spazieren(+5)', 'Rauchen(-10)'];
         } else if (urlImage === 'spielen') {
             scoreImage.src = imgPath + 'spielen/image0.jpg';
