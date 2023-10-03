@@ -1,6 +1,6 @@
 @font-face {
     font-family: "IrishGroover";
-    src: url("/src/fonts/IrishGrover.ttf");
+    src: url("../src/fonts/IrishGrover.ttf");
 }
 
 *{
@@ -102,7 +102,7 @@ img[alt='iphoneDesktop'] {
     }
 
     #section-3 {
-        background-image: url('/src/img/mobileProductions.jpg');
+        background-image: url('../src/img/mobileProductions.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -155,7 +155,7 @@ img[alt='iphoneDesktop'] {
     }
 
     #section-3 {
-        background-image: url('/src/img/handys.jpg');
+        background-image: url('../src/img/handys.jpg');
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
