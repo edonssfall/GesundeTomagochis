@@ -90,11 +90,14 @@ function checkImage() {
     } else if (score >= 10) {
         scoreImage.src += 'image10.jpg';
     } else if (score <= -250) {
-        scoreImage.src += 'image-250.jpg'
+        scoreImage.src += 'image-250.jpg';
+        setTimeout(function() {
+            alert('Tomagochi ist gestorben!!!');
+        }, 100);
     } else if (score <= -100) {
-        scoreImage.src += 'image-100.jpg'
+        scoreImage.src += 'image-100.jpg';
     } else if (score <= -10) {
-        scoreImage.src += 'image-10.jpg'
+        scoreImage.src += 'image-10.jpg';
     } else {
         scoreImage.src = startImage;
     }

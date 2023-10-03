@@ -37,14 +37,14 @@ img[alt='Logo'] {
 }
 
 img[alt='macDesktop'] {
-    width: 90%;
+    width: 80%;
 }
 
 img[alt='stickmanHallo'] {
     position: absolute;
     max-width: 13%;
     top: 3%;
-    left: 8%;
+    left: 10%;
 }
 
 img[alt='iphoneDesktop'] {
