@@ -7,17 +7,18 @@ function addLineThrough() {
 setTimeout(addLineThrough, 3000);
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.set("#stick-man", {opacity: 0});
 
 let sections = gsap.utils.toArray(".section")
 
 let tops = sections.map(section => ScrollTrigger.create({trigger: section, start: "top top"}));
 
 sections.forEach((section, i) => {
-    ScrollTrigger.create({
+    const sectionTrigger = ScrollTrigger.create({
         trigger: section,
         start: () => section.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
         pin: true,
-        pinSpacing: false
+        pinSpacing: false,
     });
 });
 
