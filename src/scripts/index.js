@@ -7,7 +7,6 @@ function addLineThrough() {
 setTimeout(addLineThrough, 3000);
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.set("#stick-man", {opacity: 0});
 
 let sections = gsap.utils.toArray(".section")
 
