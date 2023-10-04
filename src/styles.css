@@ -142,12 +142,28 @@ img[alt='iphoneDesktop'] {
         max-width: 63%;
     }
 
-    #section-1 .list-sachen {
+    #section-1 .list-sachen-mobil {
         display: none;
     }
 
     #section-1 img {
-        max-width: 90%;
+        max-width: 80%;
+    }
+
+    img[alt='macDesktop'] {
+        display: none;
+    }
+
+    img[alt='iphoneDesktop'] {
+        display: unset;
+        max-width: 95%;
+    }
+
+    img[alt='stickmanHallo'] {
+        max-width: 25%;
+        top: 55%;
+        left: 15%;
+        position: absolute;
     }
 
     #section-3 {
@@ -180,24 +196,6 @@ img[alt='iphoneDesktop'] {
     }
 }
 
-@media (max-width: 766px) {
-    #section-1 .list-sachen {
-        display: unset;
-    }
-
-    #section-1 .list-sachen-mobil {
-        display: none;
-    }
-
-    #section-1 img {
-        max-width: 53%;
-    }
-
-    img[alt='iphoneDesktop'] {
-        display: none;
-    }
-}
-
 @media (max-width: 390px) {
     #section-1 .list-sachen {
         display: unset;
@@ -205,26 +203,6 @@ img[alt='iphoneDesktop'] {
 
     #section-1 .list-sachen-mobil {
         display: none;
-    }
-
-    #section-1 img {
-        max-width: 55%;
-    }
-
-    img[alt='macDesktop'] {
-        display: none;
-    }
-
-    img[alt='iphoneDesktop'] {
-        display: unset;
-        max-width: 95%;
-    }
-
-    img[alt='stickmanHallo'] {
-        max-width: 25%;
-        top: 55%;
-        left: 15%;
-        position: absolute;
     }
 
     #section-4 img {

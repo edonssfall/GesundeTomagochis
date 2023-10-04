@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".section")
 
-let tops = sections.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+let tops = sections.map(section => ScrollTrigger.create({trigger: section, start: "top top"}));
 
 sections.forEach((section, i) => {
     ScrollTrigger.create({
@@ -24,16 +24,13 @@ sections.forEach((section, i) => {
 ScrollTrigger.create({
     snap: {
         snapTo: (progress, self) => {
-            let panelStarts = tops.map(st => st.start),
-                snapScroll = gsap.utils.snap(panelStarts, self.scroll());
+            let sectionStarts = tops.map(st => st.start),
+                snapScroll = gsap.utils.snap(sectionStarts, self.scroll());
             return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
         },
         duration: 0.5
     }
 });
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
 
