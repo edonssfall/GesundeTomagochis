@@ -41,6 +41,7 @@ img[alt='macDesktop'] {
 }
 
 img[alt='stickmanHallo'] {
+    display: none;
     position: absolute;
     max-width: 13%;
     top: 3%;
@@ -160,9 +161,9 @@ img[alt='iphoneDesktop'] {
     }
 
     img[alt='stickmanHallo'] {
-        max-width: 25%;
-        top: 55%;
-        left: 15%;
+        max-width: 35%;
+        top: 65%;
+        left: 18%;
         position: absolute;
     }
 
