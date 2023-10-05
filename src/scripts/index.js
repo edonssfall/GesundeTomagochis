@@ -46,34 +46,24 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: "#section-2",
     start: "top center",
-    onEnter: self => {
-        setTimeout(apearStickMan, 2000);
-    },
-    onEnterBack: self => {
-        setTimeout(apearStickMan, 2000);
-    },
-    onLeave: self => {
-        hideStickMan();
-    },
-    onLeaveBack: self => {
-        hideStickMan();
+    onToggle: self => {
+        if (self.isActive) {
+            setTimeout(apearStickMan, 2000);
+        } else {
+            hideStickMan();
+        }
     },
 });
 
 ScrollTrigger.create({
     trigger: "#section-0",
     start: "top center",
-    onEnter: self => {
-        setTimeout(addLineThrough, 2000);
-    },
-    onEnterBack: self => {
-        setTimeout(addLineThrough, 2000);
-    },
-    onLeave: self => {
-        hideLineThrough();
-    },
-    onLeaveBack: self => {
-        hideLineThrough();
+    onToggle: self => {
+        if (self.isActive) {
+            setTimeout(addLineThrough, 2000);
+        } else {
+            hideLineThrough();
+        }
     },
 });
 
