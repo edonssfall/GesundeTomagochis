@@ -1,5 +1,8 @@
-let linedTextElement = document.querySelector('.lined-text');
-let stickMan = document.querySelector('.stick-man');
+const linedTextElement = document.querySelector('.lined-text'),
+    stickMan = document.querySelector('.stick-man'),
+    sections = gsap.utils.toArray(".section");
+
+let tops = sections.map(section => ScrollTrigger.create({trigger: section, start: "top top"}));
 
 function addLineThrough() {
     linedTextElement.style.textDecoration = 'line-through';
@@ -18,10 +21,6 @@ function hideStickMan() {
 }
 
 gsap.registerPlugin(ScrollTrigger);
-
-let sections = gsap.utils.toArray(".section");
-
-let tops = sections.map(section => ScrollTrigger.create({trigger: section, start: "top top"}));
 
 sections.forEach((section, i) => {
     const sectionTrigger = ScrollTrigger.create({

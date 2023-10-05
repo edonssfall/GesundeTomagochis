@@ -7,12 +7,12 @@ const scoreValue = document.getElementById('scoreValue'),
     tomagochiDescription = document.getElementById('tomagochiDescription'),
     urlParams = new URLSearchParams(window.location.search),
     urlImage = urlParams.get('demo'),
-    startImage = '';
+    imgPath = './src/img/';
 
 let buttonsText = [],
     score = 0,
     tomagochisGeschichte = [],
-    imgPath = './src/img/';
+    startImage = '';
 
 document.getElementById('minus10Button').addEventListener(
     'click', () => {
