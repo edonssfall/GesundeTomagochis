@@ -1,4 +1,16 @@
-const scoreValue = document.getElementById('scoreValue'),
+function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.startsWith(name + '=')) {
+            return cookie.substring(name.length + 1);
+        }
+    }
+    return null;
+}
+
+
+let scoreValue = document.getElementById('scoreValue'),
     scoreImage = document.getElementById('scoreImage'),
     mainImage = document.getElementById('mainImage'),
     demoBlock = document.getElementById('demoBlock'),
@@ -7,42 +19,24 @@ const scoreValue = document.getElementById('scoreValue'),
     tomagochiDescription = document.getElementById('tomagochiDescription'),
     urlParams = new URLSearchParams(window.location.search),
     urlImage = urlParams.get('demo'),
-    imgPath = './src/img/',
-    themeToggle = document.getElementById('theme-toggle-checkbox');
+
+    imgPath = './src/img/';
 
 let buttonsText = [],
     score = 0,
     tomagochiAlertTitel = [],
     tomagochisGeschichte = [],
     startImage = '',
-    currentLanguage = 'en';
+    currentLanguage = getCookie("language") || 'en';
 
-themeToggle.addEventListener('change', () => {
-    if (themeToggle.checked) {
-        document.body.classList.remove('dark-mode');
-    } else {
-        document.body.classList.add('dark-mode');
-    }
-});
-
-document.getElementById('en-language').addEventListener('click', () => {
-    currentLanguage = 'en';
+document.addEventListener('languageChanged', (event) => {
+    currentLanguage = event.detail.language;
     if (urlImage === 'rauchen') {
         makeRauchenLanguage();
     } else {
         makeSpielLanguage();
     }
     nameButtons()
-});
-
-document.getElementById('de-language').addEventListener('click', () => {
-    currentLanguage = 'de';
-    if (urlImage === 'rauchen') {
-        makeRauchenLanguage();
-    } else {
-        makeSpielLanguage();
-    }
-    nameButtons();
 });
 
 document.getElementById('minus10Button').addEventListener(
