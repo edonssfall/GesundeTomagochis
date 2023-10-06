@@ -25,11 +25,22 @@
 <div class="wrapper">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 pt-2 text-center bg-black logo">
+            <div id="logo" class="col-12 pt-2 pb-1 text-center">
                 <a href="index.html" class="text-decoration-none">
-                    <img src="./src/img/logo.jpg" alt="Logo"/>
-                    <h2 class="display-4 text-decoration-underline text-white logo">Gesunde Tomagochies</h2>
+                    <img src="./src/img/logo.jpg" alt="Logo" class="animate__animated animate__fadeInDown"/>
+                    <h2 class="display-4 text-decoration-underline text-white animate__animated animate__fadeInLeft">
+                        Gesunde Tomagochies</h2>
                 </a>
+                <div class="theme-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle-checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="languages">
+                    <img id="en-language" src="./src/img/en-flag.jpg" alt="English">
+                    <img id="de-language" src="./src/img/de-flag.png" alt="Deutsch">
+                </div>
             </div>
             <div id="demoBlock">
                 <div class="col-12 row">

@@ -6,9 +6,9 @@
             </div>
             <div class="nav justify-content-end d-flex flex-row">
                 <a href="index.html">Home</a>
-                <a href="demo.html?demo=rauchen">Rauchen</a>
-                <a href="demo.html?demo=spielen">Spielen</a>
-                <a id="openContactsModal">Kontakts</a>
+                <a data-translate="Footer-0" href="demo.html?demo=rauchen">Rauchen</a>
+                <a data-translate="Footer-1" href="demo.html?demo=spielen">Spielen</a>
+                <a data-translate="Footer-2" id="openContactsModal">Kontakts</a>
                 <a id="openSupportModal">Support</a>
             </div>
         </div>
@@ -22,7 +22,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="contactsModalLabel">Kontakts</h1>
+                <h1 data-translate="ModalContacts-0" class="modal-title fs-5" id="contactsModalLabel">Kontakts</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -34,7 +34,7 @@
             <hr>
             <div class="modal-body">
                 <div class="d-flex justify-content-between">
-                    <span>Nummer:</span>
+                    <span data-translate="ModalContacts-1">Nummer:</span>
                     <span class="text-center flex-grow-1">+41 123 456 789</span>
                 </div>
             </div>
@@ -72,30 +72,28 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="supportModalLabel">Unterstützung</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+                <h1 class="modal-title fs-5" id="supportModalLabel" data-translate="modalTitle">Support</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form id="supportForm">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben">
+                        <label for="name" class="form-label" data-translate-placeholder="namePlaceholder">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">E-Mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail eingeben">
+                        <label for="email" class="form-label" data-translate-placeholder="emailPlaceholder">E-Mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
                     </div>
                     <div class="mb-3">
-                        <label for="question" class="form-label">Frage</label>
-                        <textarea class="form-control" id="question" name="question" rows="4"
-                                  placeholder="Ihre Frage hier eingeben"></textarea>
+                        <label for="question" class="form-label" data-translate="ModalSupport-1">Question</label>
+                        <textarea class="form-control" id="question" name="question" rows="4" placeholder="Enter your question here"></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-dark" id="sendButton">Senden</button>
+                <button type="button" class="btn btn-dark" id="sendButton" data-translate="sendButton">Send</button>
             </div>
         </div>
     </div>
 </div>
-

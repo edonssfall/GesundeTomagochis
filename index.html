@@ -25,29 +25,40 @@
     <link rel="stylesheet" href="./src/styles.css">
     <script type="module" src="./src/scripts/index.js"></script>
 </head>
-<body class="bg-black text-white">
+<body>
 <div class="wrapper">
     <div class="content">
         <div id="section-0" class="section">
-            <div class="row mb-3 mt-2">
-                <div class="col logo text-center">
+            <div class="row mb-3">
+                <div id="logo" class="col text-center pt-2 pb-1">
                     <a href="index.html" class="text-decoration-none">
                         <img src="./src/img/logo.jpg" alt="Logo" class="animate__animated animate__fadeInDown"/>
-                        <h2 class="display-4 text-decoration-underline text-white logo animate__animated animate__fadeInLeft">Gesunde Tomagochies</h2>
+                        <h2 class="display-4 text-decoration-underline text-white animate__animated animate__fadeInLeft">
+                            Gesunde Tomagochies</h2>
                     </a>
+                    <div class="theme-toggle animate__animated animate__fadeInDown">
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle-checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="languages animate__animated animate__fadeInRight">
+                        <img id="en-language" src="./src/img/en-flag.jpg" alt="English">
+                        <img id="de-language" src="./src/img/de-flag.png" alt="Deutsch">
+                    </div>
                 </div>
             </div>
             <div class="row flex-grow-1">
                 <div class="col-md-5 d-flex align-items-center justify-content-center animate__animated animate__fadeInLeft">
-                    <div class="text-md-start">
-                        <h2 class="display-3 ms-3">Befreien</h2>
-                        <h2 class="display-3 ms-3">Sie sich von</h2>
-                        <h2 class="display-3 ms-3 lined-text">Gewohnheiten</h2>
-                        <p class="ms-3">Wählen Sie die Sucht aus, die Sie loswerden möchten:</p>
+                    <div class="text-md-start ms-5">
+                        <h2 data-translate="Section-0.0" class="display-3">Befreien</h2>
+                        <h2 data-translate="Section-0.1" class="display-3">Sie sich von</h2>
+                        <h2 data-translate="Section-0.2" class="display-3 lined-text">Gewohnheiten</h2>
+                        <p data-translate="Section-0.3">Wählen Sie die Sucht aus, die Sie loswerden möchten:</p>
                         <div class="row mb-3">
                             <div class="d-flex mt-4 justify-content-evenly">
-                                <a href="demo.html?demo=rauchen" class="btn btn-dark btn-lg">Rauchen</a>
-                                <a href="demo.html?demo=spielen" class="btn btn-dark btn-lg">Spielen</a>
+                                <a data-translate="ButtonSmoking" href="demo.html?demo=rauchen" class="btn btn-dark btn-lg">Rauchen</a>
+                                <a data-translate="ButtonGaming" href="demo.html?demo=spielen" class="btn btn-dark btn-lg">Spielen</a>
                             </div>
                         </div>
                     </div>
@@ -61,14 +72,14 @@
             <div class="row mt-5 mt-md-3">
                 <div class="right-element col-md-6 col-12 d-flex flex-column order-md-1 order-0 description align-self-center">
                     <div class="col">
-                        <h2 class="display-4">Suchten Möglichkeiten</h2>
-                        <h2 class="display-4">Diversität von Sachen:</h2>
+                        <h2 data-translate="Section-1.0" class="display-4">Suchten Möglichkeiten</h2>
+                        <h2 data-translate="Section-1.1" class="display-4">Diversität von Sachen:</h2>
                     </div>
                     <div class="mt-md-5 md-2 left-element col ms-5 list-sachen">
                         <ul class="list-group">
-                            <li class="display-4">Rauchen</li>
-                            <li class="display-4">Spielen</li>
-                            <li class="display-4">usw.</li>
+                            <li data-translate="Section-1.2" class="display-4">Rauchen</li>
+                            <li data-translate="Section-1.3" class="display-4">Spielen</li>
+                            <li data-translate="Section-1.4" class="display-4">usw.</li>
                         </ul>
                     </div>
                 </div>
@@ -92,8 +103,8 @@
         <div id="section-2" class="section">
             <div class="central-element row flex-grow-1 mt-5">
                 <div class="col text-center">
-                    <h2 class="display-4">Visualisation genau</h2>
-                    <h2 class="display-4">auf Ihren Bildschirmen</h2>
+                    <h2 data-translate="Section-2.0" class="display-4">Visualisation genau</h2>
+                    <h2 data-translate="Section-2.1" class="display-4">auf Ihren Bildschirmen</h2>
                 </div>
             </div>
             <div class="row flex-grow-1 justify-content-center">
@@ -109,10 +120,10 @@
         <div id="section-3" class="section">
             <div class="row flex-grow-1">
                 <div class="left-element col-7 text-left text-black mt-4 ml-4">
-                    <h2 class="display-4">Multiplatform</h2>
-                    <h2 class="display-4 description">Benutzen auf alles Ihren Geräten</h2>
-                    <h2 class="display-4 description-small">Benutzen auf alles</h2>
-                    <h2 class="display-4 description-small text-decoration-underline text-wrap">Ihren Geräten</h2>
+                    <h2 data-translate="Section-3.0" class="display-4">Multiplatform</h2>
+                    <h2 data-translate="Section-3.1" class="display-4 description">Benutzen auf alles Ihren Geräten</h2>
+                    <h2 data-translate="Section-3.2" class="display-4 description-small">Benutzen auf alles</h2>
+                    <h2 data-translate="Section-3.3" class="display-4 description-small text-decoration-underline text-wrap">Ihren Geräten</h2>
                 </div>
             </div>
         </div>
@@ -120,16 +131,16 @@
             <div class="row flex-grow-md-1">
                 <div class="left-element col-md-6 offset-md-3 col-12 text-center titel">
                     <h1 class="display-1">Try It Now.</h1>
-                    <p class="text-center display-6">erwachsen neues</p>
+                    <p data-translate="Section-4.0" class="text-center display-6">erwachsen neues</p>
                     <div class="d-flex mt-4 justify-content-evenly">
-                        <a href="demo.html?demo=rauchen" class="btn btn-lg btn-dark me-2">Rauchen</a>
-                        <a href="demo.html?demo=spielen" class="btn btn-lg btn-dark">Spielen</a>
+                        <a data-translate="ButtonSmoking" href="demo.html?demo=rauchen" class="btn btn-lg btn-dark me-2">Rauchen</a>
+                        <a data-translate="ButtonGaming" href="demo.html?demo=spielen" class="btn btn-lg btn-dark">Spielen</a>
                     </div>
                 </div>
             </div>
             <div class="right-element col-md-5 ms-md-auto text-end">
                 <img src="./src/img/android_apple.png" alt="Android&Apple">
-                <p class="display-1">Soon...</p>
+                <p data-translate="Section-4.1" class="display-1">Soon...</p>
             </div>
 
         </div>
