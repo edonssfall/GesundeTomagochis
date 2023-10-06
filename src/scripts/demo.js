@@ -84,7 +84,7 @@ function createImage() {
         if (urlImage === 'rauchen') {
             scoreImage.src = imgPath + 'rauchen/image0.jpg';
             scoreImage.classList.add('rauchen_img');
-            mainImage.src = imgPath + 'smartWatch_upscaled-removebg-preview.png';
+            mainImage.src = imgPath + 'smartWatch_upscaled.png';
             mainImage.style.width = "50%";
             makeRauchenLanguage();
         } else if (urlImage === 'spielen') {
