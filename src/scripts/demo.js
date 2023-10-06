@@ -105,13 +105,15 @@ function createImage() {
 }
 
 function makeSpielLanguage() {
-    if (currentLanguage === 'en') {
+    if (currentLanguage === 'de') {
         buttonsText = ['Lernen(+10)', 'Anschauen(+5)', 'Spielen(-10)'];
+        tomagochiAlertTitel = ['Tomagochi ist gestorben', 'Tomagochi gratuliert Ihnen!!!'];
         tomagochisGeschichte = ['Ihr Tomagotchi ist in seinem unermüdlichen Streben nach stundenlangem Spielen am PC an seine Grenzen gestoßen. Die exzessive Bildschirmzeit und Vernachlässigung seiner Bedürfnisse haben zu seinem tragischen Ende geführt. Dies sollte uns daran erinnern, wie wichtig es ist, eine ausgewogene Balance zwischen virtuellem Vergnügen und der realen Welt zu finden. R.I.P., kleiner Freund.',
             "Herzlichen Glückwunsch! Du hast es geschafft, dich von exzessivem Spielen am PC zu befreien. Dies ist eine beeindruckende Leistung, die zeigt, dass du die Kontrolle über dein Leben zurückgewonnen hast. Deine Entschlossenheit und Willenskraft verdienen Anerkennung. Jetzt kannst du stolz auf dich sein und dein Leben in vollen Zügen genießen, ohne von dieser Sucht eingeschränkt zu werden. Mach weiter so und bleibe stark!"
         ];
     } else {
         buttonsText = ['Learn(+10)', 'Watch(+5)', 'Play(-10)'];
+        tomagochiAlertTitel = ['Tomagotchi has died', 'Tomagotchi congratulates you!!!'];
         tomagochisGeschichte = ["Your Tomagotchi has reached its limits in its relentless pursuit of hours of PC gaming. Excessive screen time and neglect of its needs have led to its tragic demise. This should remind us of the importance of finding a balanced equilibrium between virtual enjoyment and the real world. R.I.P., little friend.",
             "Congratulations! You've managed to free yourself from excessive PC gaming. This is an impressive achievement that shows you've regained control of your life. Your determination and willpower deserve recognition. Now you can be proud of yourself and enjoy your life to the fullest without being restricted by this addiction. Keep it up and stay strong!"
         ];
