@@ -19,7 +19,6 @@ let scoreValue = document.getElementById('scoreValue'),
     tomagochiDescription = document.getElementById('tomagochiDescription'),
     urlParams = new URLSearchParams(window.location.search),
     urlImage = urlParams.get('demo'),
-
     imgPath = './src/img/';
 
 let buttonsText = [],
@@ -36,7 +35,7 @@ document.addEventListener('languageChanged', (event) => {
     } else {
         makeSpielLanguage();
     }
-    nameButtons()
+    nameButtons();
 });
 
 document.getElementById('minus10Button').addEventListener(
@@ -85,13 +84,13 @@ function createImage() {
         if (urlImage === 'rauchen') {
             scoreImage.src = imgPath + 'rauchen/image0.jpg';
             scoreImage.classList.add('rauchen_img');
-            mainImage.src = imgPath + 'smartWatch_upscaled.jpg';
+            mainImage.src = imgPath + 'smartWatch_upscaled-removebg-preview.png';
             mainImage.style.width = "50%";
             makeRauchenLanguage();
         } else if (urlImage === 'spielen') {
             scoreImage.src = imgPath + 'spielen/image0.jpg';
             scoreImage.classList.add('spielen_img');
-            mainImage.src = imgPath + 'bildschirm_upscaled.jpg'
+            mainImage.src = imgPath + 'bildschirm_upscaled.png';
             mainImage.style.width = "89%";
             makeSpielLanguage();
         } else {
@@ -154,18 +153,18 @@ function checkImage() {
         scoreImage.src = imgPath + 'spielen/';
     }
     if (score > -10 && score < 10) {
-        scoreImage.src += 'image0.jpg'
+        scoreImage.src += 'image0.jpg';
     } else if (score >= 100) {
         scoreImage.src += 'image100.jpg';
-        tomagochiTitel.textContent = tomagochiAlertTitel[1]
-        tomagochiDescription.textContent = tomagochisGeschichte[1]
+        tomagochiTitel.textContent = tomagochiAlertTitel[1];
+        tomagochiDescription.textContent = tomagochisGeschichte[1];
         $('#alertModal').modal('show');
     } else if (score >= 10) {
         scoreImage.src += 'image10.jpg';
     } else if (score <= -250) {
         scoreImage.src += 'image-250.jpg';
-        tomagochiTitel.textContent = tomagochiAlertTitel[0]
-        tomagochiDescription.textContent = tomagochisGeschichte[0]
+        tomagochiTitel.textContent = tomagochiAlertTitel[0];
+        tomagochiDescription.textContent = tomagochisGeschichte[0];
         $('#alertModal').modal('show');
     } else if (score <= -100) {
         scoreImage.src += 'image-100.jpg';
